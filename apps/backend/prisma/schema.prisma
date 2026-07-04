@@ -1,0 +1,14 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Foundation model - to be expanded in Phase 3
+model UserPlaceholder {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+}

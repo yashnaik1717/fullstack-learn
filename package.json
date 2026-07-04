@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-learn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Software Engineering Learning Platform",
+  "scripts": {
+    "dev": "turbo dev || pnpm -r --parallel dev",
+    "build": "turbo build || pnpm -r build",
+    "lint": "eslint \"**/*.{ts,tsx,js}\" --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,yml,yaml}\"",
+    "test": "pnpm -r test",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "husky": "^9.0.11",
+    "turbo": "^1.13.3",
+    "@typescript-eslint/parser": "^7.8.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2"
+  },
+  "packageManager": "pnpm@11.9.0"
+}

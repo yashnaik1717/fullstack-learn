@@ -1,0 +1,61 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.docusaurus/
+.turbo/
+.cache/
+
+# Debug and logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Environments and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.eslintcache
+
+# SQLite/local DB databases
+*.db
+*.db-journal
+*.sqlite
+
+# Playwright reports
+/playwright-report/
+/test-results/
+/playwright/.local-browsers
+
+# Vitest coverage
+coverage/
+
+# Prisma generated engines (though they should be generated in node_modules, sometimes people put them here)
+/prisma/generated/
