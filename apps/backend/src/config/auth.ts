@@ -4,9 +4,10 @@ dotenv.config();
 export const authConfig = {
   jwt: {
     accessSecret: process.env.JWT_SECRET || 'super-secret-access-token-key-change-in-prod',
-    refreshSecret: process.env.JWT_REFRESH_SECRET || 'super-secret-refresh-token-key-change-in-prod',
-    accessExpiry: '15m' as const,     // Access token expiry
-    refreshExpiry: '7d' as const,     // Refresh token expiry
+    refreshSecret:
+      process.env.JWT_REFRESH_SECRET || 'super-secret-refresh-token-key-change-in-prod',
+    accessExpiry: '15m' as const, // Access token expiry
+    refreshExpiry: '7d' as const, // Refresh token expiry
   },
   cookie: {
     refreshCookieName: 'refreshToken',

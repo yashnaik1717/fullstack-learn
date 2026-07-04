@@ -18,11 +18,26 @@ router.post('/register', authRateLimiter, validateBody(registerSchema), authCont
 router.post('/login', loginRateLimiter, validateBody(loginSchema), authController.login);
 router.post('/refresh', authController.refresh);
 router.post('/logout', authController.logout);
-router.post('/forgot-password', authRateLimiter, validateBody(forgotPasswordSchema), authController.forgotPassword);
-router.post('/reset-password', authRateLimiter, validateBody(resetPasswordSchema), authController.resetPassword);
+router.post(
+  '/forgot-password',
+  authRateLimiter,
+  validateBody(forgotPasswordSchema),
+  authController.forgotPassword,
+);
+router.post(
+  '/reset-password',
+  authRateLimiter,
+  validateBody(resetPasswordSchema),
+  authController.resetPassword,
+);
 
 // Protected routes
 router.get('/me', requireAuth, authController.getMe);
-router.put('/profile', requireAuth, validateBody(updateProfileSchema), authController.updateProfile);
+router.put(
+  '/profile',
+  requireAuth,
+  validateBody(updateProfileSchema),
+  authController.updateProfile,
+);
 
 export default router;

@@ -145,7 +145,7 @@ describe('Authentication API Endpoint Tests', () => {
     it('should return user profile if authenticated', async () => {
       const testToken = jwt.sign(
         { sub: 'user-uuid-1', email: 'test@example.com', role: 'STUDENT' },
-        authConfig.jwt.accessSecret
+        authConfig.jwt.accessSecret,
       );
 
       (prisma.user.findUnique as any).mockResolvedValue({
