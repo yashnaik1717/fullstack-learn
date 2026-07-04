@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "lucide-react": "^0.379.0",
+    "@fullstack-learn/types": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
